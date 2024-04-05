@@ -1,4 +1,4 @@
-package day11_testNGFramework;
+package tests.day11_testNGFramework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
