@@ -32,7 +32,7 @@ public class ReusableMethods {
         List<String> donusturulenList = new ArrayList<>();
 
         for (WebElement eachElement : webElementList
-             ) {
+        ) {
 
             donusturulenList.add(eachElement.getText());
         }
@@ -54,7 +54,7 @@ public class ReusableMethods {
         //    loop'u bitirelim
 
         for (String eachWHD : tumWHDSeti
-             ) {
+        ) {
 
             Driver.getDriver().switchTo().window(eachWHD);
 
