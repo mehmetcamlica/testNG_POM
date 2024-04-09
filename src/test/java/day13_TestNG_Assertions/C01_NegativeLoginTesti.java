@@ -1,4 +1,4 @@
-package tests.day13_TestNG_Assertions;
+package day13_TestNG_Assertions;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
