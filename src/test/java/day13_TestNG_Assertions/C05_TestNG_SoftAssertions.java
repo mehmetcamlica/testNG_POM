@@ -1,4 +1,4 @@
-package day13_TestNG_Assertions;
+package tests.day13_TestNG_Assertions;
 
 import javafx.scene.input.Dragboard;
 import org.openqa.selenium.Keys;
@@ -8,6 +8,8 @@ import pages.TestOtomasyonuPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+
+import java.util.Locale;
 
 public class C05_TestNG_SoftAssertions {
 
@@ -67,9 +69,9 @@ public class C05_TestNG_SoftAssertions {
         // acilan urun sayfasinda urun isminde
         // case sensitive olmadan aranacak kelime gectigini test edin
         String expectedIsimIcerik = ConfigReader.getProperty("toAranacakKelime").
-                                                toLowerCase();
+                toLowerCase();
         String actualurunIsmi = testOtomasyonuPage.urunIsimElementi.getText()
-                                                    .toLowerCase();
+                .toLowerCase();
 
         softAssert.assertTrue(actualurunIsmi.contains(expectedIsimIcerik),"urun ismi testi failed");
 
