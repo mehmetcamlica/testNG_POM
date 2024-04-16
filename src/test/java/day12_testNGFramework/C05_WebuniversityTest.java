@@ -5,7 +5,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.WebuniversityPage;
 import utilities.Driver;
-import utilities.ReusableMethods;
 
 public class C05_WebuniversityTest {
 
