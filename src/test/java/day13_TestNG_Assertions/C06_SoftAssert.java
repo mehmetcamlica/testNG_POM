@@ -6,6 +6,7 @@ import org.testng.asserts.SoftAssert;
 import pages.TestOtomasyonuPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C06_SoftAssert {
 

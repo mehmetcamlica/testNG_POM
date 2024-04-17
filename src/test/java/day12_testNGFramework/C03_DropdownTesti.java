@@ -1,10 +1,11 @@
-package tests.day12_testNGFramework;
+package day12_testNGFramework;
 
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.TestOtomasyonuFormPage;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C03_DropdownTesti {
 

@@ -3,6 +3,7 @@ package day13_TestNG_Assertions;
 import org.testng.annotations.Test;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C03_SingletonPattern {
 
