@@ -1,4 +1,4 @@
-package day15_crossBrowserTestler;
+package tests.day15_crossBrowserTestler;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;

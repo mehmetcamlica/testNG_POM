@@ -20,11 +20,11 @@
         <classes>
 
             <class name="tests.day11_testNGFramework.C04_POM_ilkClass"></class>
-            <class name="day12_testNGFramework.C06_AramaTesti"></class>
-            <class name="day12_testNGFramework.C07_DinamikTestDataKullanimi"></class>
-            <class name="day12_testNGFramework.C09_NegativeLoginTesti"></class>
-            <class name="day13_TestNG_Assertions.C01_NegativeLoginTesti"></class>
-            <class name="day13_TestNG_Assertions.C07_SoftAssertion"></class>
+            <class name="tests.day12_testNGFramework.C06_AramaTesti"></class>
+            <class name="tests.day12_testNGFramework.C07_DinamikTestDataKullanimi"></class>
+            <class name="tests.day12_testNGFramework.C09_NegativeLoginTesti"></class>
+            <class name="tests.day13_TestNG_Assertions.C01_NegativeLoginTesti"></class>
+            <class name="tests.day13_TestNG_Assertions.C07_SoftAssertion"></class>
 
         </classes>
 

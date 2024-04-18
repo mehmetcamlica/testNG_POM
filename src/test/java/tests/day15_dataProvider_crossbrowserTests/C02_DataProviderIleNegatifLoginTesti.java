@@ -1,4 +1,4 @@
-package day15_dataProvider_crossbrowserTests;
+package tests.day15_dataProvider_crossbrowserTests;
 
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;

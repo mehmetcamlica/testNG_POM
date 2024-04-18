@@ -1,4 +1,4 @@
-package day14_xmlDosyaKullanimi_htmlRaporOlusturma;
+package tests.day13_TestNG_Assertions;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -6,87 +6,78 @@ import pages.TestOtomasyonuPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
-import utilities.TestBaseRapor;
 
-public class C04_RaporluNegatifLoginTesti extends TestBaseRapor {
+public class C01_NegativeLoginTesti {
+
+    //1- https://www.testotomasyonu.com/ anasayfasina gidin
+    //2- login linkine basin
+    // 3-  3 farkli test method’u olusturun.
+    //	- gecerli username, gecersiz password
+    //	- gecersiz username, gecerli password
+    //	- gecersiz username, gecersiz password.
+    //4- Login butonuna basarak login olun
+    //5- Basarili olarak giris yapilamadigini test edin
 
     @Test
     public void gecersizPasswordTesti(){
-        extentTest = extentReports.createTest("gecersiz Password Testi",
-                "Gecerli kullanici adi ve gecersiz sifre ile giris yapilamaz");
-
         //1- testotomasyonu  anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
-        extentTest.info("Kullanici testotomasyonu  anasayfasina gider");
         //2- login linkine basin
         TestOtomasyonuPage testOtomasyonuPage = new TestOtomasyonuPage();
         testOtomasyonuPage.accountLinki.click();
-        extentTest.info("login linkine basar");
+
         //3- gecerli username, gecersiz password
         testOtomasyonuPage.emailKutusu.sendKeys(ConfigReader.getProperty("toGecerliEmail"));
-        extentTest.info("email olarak gecerli email girer");
         testOtomasyonuPage.passwordKutusu.sendKeys(ConfigReader.getProperty("toGecersizPassword"));
-        extentTest.info("password olarak gecersiz password girer");
+
         //4- Login butonuna basarak login olun
         testOtomasyonuPage.loginButonu.click();
-        extentTest.info("Login butonuna basarak login olmayi dener");
+
         //5- Basarili olarak giris yapilamadigini test edin
         Assert.assertTrue(testOtomasyonuPage.emailKutusu.isEnabled());
-        extentTest.pass("giris yapilamadigini test eder");
 
+        Driver.quitDriver();
     }
 
     @Test
     public void gecersizUsernameTesti(){
-        extentTest = extentReports.createTest("gecersiz Username Testi",
-                "Gecerli kullanici adi ve gecersiz sifre ile giris yapilamaz");
-
         //1- testotomasyonu  anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
-        extentTest.info("Kullanici testotomasyonu  anasayfasina gider");
         //2- login linkine basin
         TestOtomasyonuPage testOtomasyonuPage = new TestOtomasyonuPage();
         testOtomasyonuPage.accountLinki.click();
-        extentTest.info("login linkine basar");
 
         //3	- gecersiz username, gecerli password
         testOtomasyonuPage.emailKutusu.sendKeys(ConfigReader.getProperty("toGecersizEmail"));
-        extentTest.info("email olarak gecersiz email girer");
         testOtomasyonuPage.passwordKutusu.sendKeys(ConfigReader.getProperty("toGecerliPassword"));
-        extentTest.info("password olarak gecerli password girer");
         ReusableMethods.bekle(1);
         //4- Login butonuna basarak login olun
         testOtomasyonuPage.loginButonu.click();
-        extentTest.info("Login butonuna basarak login olmayi dener");
+
         //5- Basarili olarak giris yapilamadigini test edin
         Assert.assertTrue(testOtomasyonuPage.emailKutusu.isEnabled());
-        extentTest.pass("giris yapilamadigini test eder");
 
+        Driver.quitDriver();
     }
 
     @Test
     public void gecersizUsernameGecersizPasswordTesti(){
-        extentTest = extentReports.createTest("gecersiz Username, gecersiz password Testi",
-                "Gecersiz kullanici adi ve gecersiz sifre ile giris yapilamaz");
-
         //1- testotomasyonu  anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
-        extentTest.info("Kullanici testotomasyonu  anasayfasina gider");
         //2- login linkine basin
         TestOtomasyonuPage testOtomasyonuPage = new TestOtomasyonuPage();
         testOtomasyonuPage.accountLinki.click();
-        extentTest.info("login linkine basar");
+
         //3	- gecersiz username, gecersiz password
         testOtomasyonuPage.emailKutusu.sendKeys(ConfigReader.getProperty("toGecersizEmail"));
-        extentTest.info("email olarak gecersiz email girer");
         testOtomasyonuPage.passwordKutusu.sendKeys(ConfigReader.getProperty("toGecersizPassword"));
-        extentTest.info("password olarak gecersiz password girer");
+
         //4- Login butonuna basarak login olun
         testOtomasyonuPage.loginButonu.click();
-        extentTest.info("Login butonuna basarak login olmayi dener");
+
         //5- Basarili olarak giris yapilamadigini test edin
         Assert.assertTrue(testOtomasyonuPage.emailKutusu.isEnabled());
-        extentTest.pass("giris yapilamadigini test eder");
 
+        Driver.quitDriver();
     }
 }

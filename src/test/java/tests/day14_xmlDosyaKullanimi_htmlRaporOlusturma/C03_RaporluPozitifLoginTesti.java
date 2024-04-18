@@ -1,4 +1,4 @@
-package day14_xmlDosyaKullanimi_htmlRaporOlusturma;
+package tests.day14_xmlDosyaKullanimi_htmlRaporOlusturma;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package day12_testNGFramework;
+package tests.day12_testNGFramework;
 
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;

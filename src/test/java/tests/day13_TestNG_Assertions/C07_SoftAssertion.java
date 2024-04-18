@@ -1,4 +1,4 @@
-package day13_TestNG_Assertions;
+package tests.day13_TestNG_Assertions;
 
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
