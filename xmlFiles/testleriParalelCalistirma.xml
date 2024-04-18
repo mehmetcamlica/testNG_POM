@@ -25,9 +25,9 @@
 
     <test name="browser2">
         <classes>
-            <class name="tests.day12_testNGFramework.C03_DropdownTesti"></class>
-            <class name="tests.day12_testNGFramework.C06_AramaTesti"></class>
-            <class name="tests.day13_TestNG_Assertions.C01_NegativeLoginTesti">
+            <class name="day12_testNGFramework.C03_DropdownTesti"></class>
+            <class name="day12_testNGFramework.C06_AramaTesti"></class>
+            <class name="day13_TestNG_Assertions.C01_NegativeLoginTesti">
                 <methods>
                     <include name="gecersizPasswordTesti"></include>
                 </methods>
